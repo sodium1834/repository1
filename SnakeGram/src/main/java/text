@@ -1,0 +1,42 @@
+
+实体类：
+1、食物 Food
+a,isEatBySnake()
+b,drawMe()
+
+2、障碍物 Ground
+a,isEatBySnake()
+b,drawMe()
+
+3、蛇 Snake
+a,移动 move
+b,吃食物 eatfood
+c,改变方向 changeDirection
+d,画出自己 drawMe
+e,判断吃自己 iseatself
+
+视图：
+GamePanel extends JPanel
+控制器Controller
+控制四个对象，通过构造函数初始化
+控制器能控制蛇的移动，主要方向改变，键盘事件控制，
+需要是键盘监听器，所以需要继承keyAdapter重写keyPressed方法
+每次移动进行判断蛇是否碰到自己，碰到食物
+需要写监听器进行监听
+蛇，添加监听器的方法
+
+组装游戏
+控制器可以控制游戏开始
+储存蛇身LinkedList
+用point 每个方块宽度高度固定。
+
+辅助类 Global
+
+初始化蛇身
+格子中间三个格子做初始蛇身
+
+蛇的移动，去尾加头
+
+
+
+
